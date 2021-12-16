@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A61842E8-DC11-4A85-9184-EF40AD760388}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CadBoardData</RootNamespace>
+    <AssemblyName>CadBoardData</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IProjectPropertiesCAD.cs" />
+    <Compile Include="INotesCAD.cs" />
+    <Compile Include="IVariant.cs" />
+    <Compile Include="IBody.cs" />
+    <Compile Include="IBoardCAD.cs" />
+    <Compile Include="IContour.cs" />
+    <Compile Include="ILine.cs" />
+    <Compile Include="IArc.cs" />
+    <Compile Include="ICutOut.cs" />
+    <Compile Include="IVia.cs" />
+    <Compile Include="IHolePad.cs" />
+    <Compile Include="IHierarchyCAD.cs" />
+    <Compile Include="IComponentID.cs" />
+    <Compile Include="IComponentCAD.cs" />
+    <Compile Include="IVariantCAD.cs" />
+    <Compile Include="ICoordinats.cs" />
+    <Compile Include="IBendingLine.cs" />
+    <Compile Include="IPrimitive.cs" />
+    <Compile Include="IDataESKD.cs" />
+    <Compile Include="IAssemblyCAD.cs" />
+    <Compile Include="ILayer.cs" />
+    <Compile Include="IPaint.cs" />
+    <Compile Include="IText.cs" />
+    <Compile Include="ITracks.cs" />
+    <Compile Include="IHatch.cs" />
+    <Compile Include="IPolygon.cs" />
+    <Compile Include="IComponentPrint.cs" />
+    <Compile Include="IPad.cs" />
+    <Compile Include="IHole.cs" />
+    <Compile Include="ICable.cs" />
+    <Compile Include="IHarnessCAD.cs" />
+    <Compile Include="IWire.cs" />
+    <Compile Include="INet.cs" />
+    <Compile Include="Assembly.cs" />
+    <Compile Include="Contour.cs" />
+    <Compile Include="HolePad.cs" />
+    <Compile Include="Via.cs" />
+    <Compile Include="Arc.cs" />
+    <Compile Include="Line.cs" />
+    <Compile Include="Board.cs" />
+    <Compile Include="Coordinats.cs" />
+    <Compile Include="Variant.cs" />
+    <Compile Include="Notes.cs" />
+    <Compile Include="ProjectProperties.cs" />
+    <Compile Include="Body.cs" />
+    <Compile Include="Point.cs" />
+    <Compile Include="Propertie.cs" />
+    <Compile Include="CutOut.cs" />
+    <Compile Include="Hierarchy.cs" />
+    <Compile Include="ElementaryComponentID.cs" />
+    <Compile Include="AssemblyComponentID.cs" />
+    <Compile Include="ComponentID.cs" />
+    <Compile Include="ComponentCAD.cs" />
+    <Compile Include="VariantCAD.cs" />
+    <Compile Include="BendingLine.cs" />
+    <Compile Include="DataESKD.cs" />
+    <Compile Include="ContourNexus.cs" />
+    <Compile Include="Quaternion.cs" />
+    <Compile Include="Paint.cs" />
+    <Compile Include="Layer.cs" />
+    <Compile Include="Polygon.cs" />
+    <Compile Include="Hatch.cs" />
+    <Compile Include="Tracks.cs" />
+    <Compile Include="EskdSpecificationType.cs" />
+    <Compile Include="Text.cs" />
+    <Compile Include="TypeForm.cs" />
+    <Compile Include="TypeHatch.cs" />
+    <Compile Include="TypeJust.cs" />
+    <Compile Include="TypeFlip.cs" />
+    <Compile Include="TypeShape.cs" />
+    <Compile Include="ComponentPrint.cs" />
+    <Compile Include="Pad.cs" />
+    <Compile Include="Hole.cs" />
+    <Compile Include="Cable.cs" />
+    <Compile Include="Harness.cs" />
+    <Compile Include="Wire.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
