@@ -22,7 +22,7 @@ public interface IComponentCAD
    
    ICoordinats GetICoordinats();
    
-   IDataESKD GetIComponentData();
+   IData GetIComponentData();
    
    IComponentCAD Clone();
 

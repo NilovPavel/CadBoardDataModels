@@ -11,10 +11,6 @@ public interface IAssemblyCAD
    
    IBoardCAD GetIBoardCAD();
    
-   IHierarchyCAD GetIHierarchyCAD();
-   
-   INotesCAD GetINotesCAD();
-   
    IVariantCAD GetIVariantCAD();
    
    IHarnessCAD GetIHarnessCAD();

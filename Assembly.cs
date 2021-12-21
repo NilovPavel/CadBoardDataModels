@@ -13,8 +13,6 @@ public class Assembly
    
    public ProjectProperties projectProperties;
    public Board board;
-   public Hierarchy hierarchy;
-   public Notes[] notes;
    public VariantCAD variantCAD;
    public Harness harness;
    
@@ -23,11 +21,6 @@ public class Assembly
          this.iAssemblyCAD = iAssemblyCAD;
          this.projectProperties = new ProjectProperties(this.iAssemblyCAD.GetIProjectPropertiesCAD());
          this.board = new Board(this.iAssemblyCAD.GetIBoardCAD());
-         this.hierarchy = new Hierarchy(this.iAssemblyCAD.GetIHierarchyCAD());
-         INotesCAD iNotesCAD = this.iAssemblyCAD.GetINotesCAD();
-         this.notes = new Notes[iNotesCAD.GetRazdelNames().Length];
-         for (int i = 0; i < iNotesCAD.GetRazdelNames().Length; i++)
-              this.notes[i] = new Notes(iNotesCAD.GetRazdelNames()[i], iNotesCAD);
          this.variantCAD = new VariantCAD(this.iAssemblyCAD.GetIVariantCAD());
          this.harness = new Harness(this.iAssemblyCAD.GetIHarnessCAD());
    }

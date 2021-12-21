@@ -7,7 +7,7 @@ using System;
 
 public class Text
 {
-   private TypeJust justification;
+   private bool isHidden;
    
    private IText iText;
    
@@ -19,6 +19,7 @@ public class Text
    public string fontName;
    public double height;
    public double width;
+   public TypeJust justification;
    
    public Text()
    {
