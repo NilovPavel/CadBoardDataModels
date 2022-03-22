@@ -72,5 +72,4 @@
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\..\..\..\..\..\..\rtl.net\StyleCop\StyleCop.MSBuild.Targets" />
 </Project>
